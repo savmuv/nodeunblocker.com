@@ -10,7 +10,7 @@
  */
 
 var url = require('url');
-var querystring = require('querystring');
+//var querystring = require('querystring');
 var express = require('express');
 var unblocker = require('unblocker');
 var Transform = require('stream').Transform;
@@ -71,7 +71,7 @@ app.use('/', express.static(__dirname + '/public'));
 app.get("/no-js", function(req, res) {
     // grab the "url" parameter from the querystring
     // var site = querystring.parse(url.parse(req.url).query).url;
-    var site = https://subscene.com/;
+    var site = subscene.com;
     // and redirect the user to /proxy/url
     res.redirect(unblockerConfig.prefix + site);
 });
